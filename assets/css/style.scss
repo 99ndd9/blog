@@ -1,0 +1,143 @@
+---
+---
+
+$header-bg-color: #4B2FA0;
+$header-bg-color-secondary: #3D238E;
+$header-heading-color: #FFFFFF;
+$section-headings-color: #4F00FF;
+$code-bg-color: #EFE4FF;
+$code-text-color: #333;
+
+@import "{{ site.theme }}";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  /*background: repeating-linear-gradient(45deg, #FDFAFF 0px, #FDFAFF 10px, #FCFAFF 10px, #FCFAFF 20px); */
+  background: #F1E9FF;
+  color: #333;
+  font: lighter 16px "Noto Sans JP", sans-serif;
+}
+
+/*body::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('//raw.githubusercontent.com/99ndd9/assets/refs/heads/main/blog/reze.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background-attachment: scroll;
+  }
+}*/
+
+a {
+  color: #5B00FF;
+  cursor: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  background: #F2ECFF;
+  text-decoration: none;
+  border-bottom: 1px solid #9800FF;
+}
+
+.site-footer {
+  border-top: 1px solid #D1D1D1;
+  background-color: transparent;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+::selection {
+  background: #D9CCFF;
+  color: #333;
+}
+
+.btn,
+.btn:hover{
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*border-radius: 30px 0 30px;*/
+  border-radius: 50px;
+}
+
+.btn::after {
+}   
+
+hr {
+  background-color: #CF77FF !important;
+  height: 1px !important;
+  border: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  user-select: none;
+}
+
+.page-header {
+  position: relative;
+  z-index: 9998;
+}
+
+#btn-to-top {
+  display: none;
+  user-select: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #5824FF;
+  color: #FFFFFF;
+  padding: 14px 17px;
+  transition: 0.2s;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+#btn-to-top:hover {
+  color: #FFFFFF;
+  outline: #4100C7 solid 2px;
+  outline-offset: 2px;
+  background-color: #5E2CC7;
+}
+
+.icon {
+  border-radius: 100px;
+  width: 50%;
+  text-align: center;
+  margin: 15px 0;
+}
