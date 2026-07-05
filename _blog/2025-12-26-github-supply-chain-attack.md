@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 脅威アクターはどのようにGitHubをソーシャルエンジニアリングに利用するのか
+title: GitHub のリポジトリフォーク機能の悪用：脅威アクターによるサプライチェーン攻撃のベクトルとして
 description: ᓀ‸ᓂ
 date: 2025-12-23
 categories: [threat]
