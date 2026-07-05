@@ -5,7 +5,7 @@ title: 異世界へようこそ！
 
 ## こんにちは、人間！異世界へようこそ。
 
-<center><img style="box-shadow: 0 0 0 7px rgba(126, 51, 255, 0.4);
+<center><img style="box-shadow: 0 0 0 8px rgba(126, 51, 255, 0.1);
 " class="icon" src="./assets/img/sky.png" alt="Icon"></center>
 
 <!--![Header](https://capsule-render.vercel.app/api?type=Waving&color=timeGradient&height=300&animation=fadeIn&section=header&text=Yaho!&fontSize=100)-->
@@ -62,7 +62,6 @@ title: 異世界へようこそ！
 
 <ul>
   <li><a href="./tools/js/">Javascript オブスキュレイター</a></li>
-  </li>
 </ul>
 
 <br />
