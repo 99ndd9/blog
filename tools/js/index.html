@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+body {
+    background: #D2D2D2;
+}
+
+textarea {
+    width: 350px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 200px;
+    background: #1e1e1e;
+    color: #00ff00;
+    font-family: courier;
+    border-color: #333;
+    outline: none;
+    border: 8px ridge;
+}
+
+button {
+    width: 80px;
+    color: #000;
+    background: #D7D7D7;
+    font-family: monospace;
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-color: #fff;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 20px;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: sans-serif;
+    user-select: none;
+    font-size: 16px;
+}
+        </style>
+    </head>
+    <body align="center">
+        <h1>Javascript Obfuscator</h1>
+        <textarea id="input"></textarea>
+        <br /><br /><button id="go">Go!</button><br /><br />
+        <textarea id='output' readonly></textarea>
+        <!-- JS -->
+        <script>
+        var input=document.getElementById("input"),output=document.getElementById("output");document.getElementById("go").onclick=e=>{var t=input.value.replace(/[^\x00-\xff]/gu,e=>{var t=e.codePointAt(0).toString(16);return 5===t.length?"\\u{"+t+"}":"\\u"+("0"+t).slice(-4)}).split("").map(e=>("000"+e.codePointAt(0).toString(4)).slice(-4).replace(/([0|1|2|3])/g,e=>["​","‌","‍","\ufeff"][e])).join("");output.value='Function("ﾠ","ﾠ(\''+t+"'.replace(/.{4}/g,f=>String.fromCodePoint(parseInt(f.replace(/[​|‌|‍|\ufeff]/g,e=>({'​':0,'‌':1,'‍':2,'\ufeff':3}[e])),4))).replace(/\\\\u([a-f\\d]{4}|{([a-f\\d]{5})})/gi,(x,y,z)=>String.fromCodePoint('0x'+(z||y))))\")(eval)"};
+        </script>
+    </body>
+</html>
