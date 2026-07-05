@@ -1,0 +1,20 @@
+title: 異世界へようこそ！
+description: 異世界
+show_downloads: false
+hide_github: true
+
+collections:
+  blog:
+    output: true
+    permalink: /:title/
+
+buttons:
+  - text: ""
+    href: "https://github.com/99ndd9/blog/"
+
+remote_theme: pages-themes/cayman
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+url: https://99ndd9.github.io
