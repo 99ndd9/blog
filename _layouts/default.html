@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "ja-JP" }}">
+<head>
+    <meta charset="UTF-8">
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Noto+Sans+JP:wght@300&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="no-email-collection" content="https://www.unspam.com/noemailcollection">
+    <meta name="theme-color" content="#121212">
+    <meta name="GPTBot" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+</head>
+<body>
+    <a id="skip-to-content" href="#content">Skip :3</a>
+    <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        {% if site.github.is_project_page %}
+        <a href="javascript:location.reload();" class="btn">世界をリセットする</a>
+        <a href="/blog/" class="btn">主世界</a>
+        {% endif %}
+        {% if site.show_downloads %}
+        {% endif %}
+    </header>
+    <main id="content" class="main-content" role="main">
+        {{ content }}
+        <footer class="site-footer">
+            <div class="footer">
+                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp;<a href="//github.com/99ndd9/">宇宙人 (¬`‸´¬)</a>.<br />無断転載を禁じます。</p>
+            </div>
+        </footer>
+    </main>
+    <script>let button=document.getElementById("btn-to-top");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?button.style.display="block":button.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()};</script>
+    </body>
+  </html>
