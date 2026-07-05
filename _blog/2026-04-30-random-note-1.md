@@ -428,3 +428,13 @@ Greece: .gr
 Zambia: .zm
 Zimbabwe: .zw
 ```
+
+
+
+## 有害なサイトを報告するための便利なリンク集
+
+- https://threatcenter.crdf.fr/submit_url.html/
+- https://phishing.eset.com/en-us/report/
+- https://report.netcraft.com/report/
+- https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site/
+- https://safebrowsing.google.com/safebrowsing/report_phish/
