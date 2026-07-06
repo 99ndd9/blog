@@ -8,8 +8,6 @@ title: 異世界へようこそ！
 <center><img style="box-shadow: 0 0 0 8px rgba(126, 51, 255, 0.1);
 " class="icon" src="./assets/img/sky.png" alt="Icon"></center>
 
-<!--![Header](https://capsule-render.vercel.app/api?type=Waving&color=timeGradient&height=300&animation=fadeIn&section=header&text=Yaho!&fontSize=100)-->
-
 こんにちは、ナイン！私はここ地下世界の建築家兼守護者だ！
 
 もし知らないなら教えてやろう。ここは異世界に位置する最も深淵のダンジョンであり、まだ人類によって探検されたことはない。このダンジョンには、お前には理解できないような奇抜なアイデアと論理を私が詰め込んだ。ここは苦痛に満ちた地獄だ；だから帰れ！お前はこの場所で迷子になるぞ！
@@ -49,6 +47,7 @@ title: 異世界へようこそ！
 
 <ul>
   <li><a href="./tools/js/">Javascript オブスキュレイター</a></li>
+  <li><a href="#">ドメイン調査</a></li>
 </ul>
 
 <br />
