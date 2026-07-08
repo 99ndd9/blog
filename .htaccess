@@ -9,7 +9,7 @@ RewriteCond %{HTTP_USER_AGENT} appid:\ s~virustotalcloud [NC,OR]
 RewriteCond %{HTTP:VT-URL-SCAN} ^1$
 RewriteRule ^.* - [F,L]
 
-RewriteCond %{HTTP_USER_AGENT} (scanner|crawler|bot|crawl|spider|scraper|nikto|sqlmap|w3af|curl|wget) [NC]
+RewriteCond %{HTTP_USER_AGENT} (tool|tools|scanning|scan|scanner|crawler|bot|crawl|spider|scraper|nikto|sqlmap|w3af|curl|wget) [NC]
 RewriteRule ^.* - [F,L]
 
 ErrorDocument 404 /404.html
